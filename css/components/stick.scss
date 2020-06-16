@@ -1,0 +1,19 @@
+.stick-triangel{
+    position: relative;
+    &::before{
+        content: url(/img/triangle.png);
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+    }
+}
+.stick-pentagon{
+    position: relative;
+    &::before{
+        content: url(/img/pentagon.png);
+        position: absolute;
+        right: 20%;
+        bottom: -25px;
+
+    }
+}

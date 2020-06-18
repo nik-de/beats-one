@@ -1,0 +1,38 @@
+.btn{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 18px 35px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    line-height: 1;
+    text-decoration: none;
+    border: none;
+
+
+    &--theme--red{
+        background: $red;
+        color: #ffffff;
+        &:hover{
+            background: #000000;
+        }
+    }
+    &--theme--reds{
+        background: $red;
+        color: #ffffff;
+        &:hover{
+            background: #ffffff;
+            color: #000000;
+        }
+    }
+    &--theme--trans{
+        background: transparent;
+        color: #ffffff;
+        text-transform: none;
+        user-select: none;
+        &:hover{
+            color: $red;
+        }
+    }
+
+
+}

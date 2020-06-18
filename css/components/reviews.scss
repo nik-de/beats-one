@@ -17,13 +17,16 @@
     }
 }
 .reviews__display-inner{
-    display: flex;
+    display: none;
+    &--active{
+        display: flex;
+    }
 }
 .reviews__avatar{
     width: 245px;
     height: 260px;
 }
-.reviews__avatar-img{
+.reviews__avatar img{
     object-fit: cover;
     width: 100%;
     height: 100%;

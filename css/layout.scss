@@ -1,9 +1,19 @@
+html{
+    font-size: $fontsize;
+
+    @include tablets{
+        font-size: $fontsize - 1px;
+    
+    }
+    @include phones{
+        font-size: $fontsize - 2px;
+    }
+}
 html,
 body{
     height: 100%;
 }
 body{
-    font-size: $fontsize;
     font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
@@ -14,12 +24,13 @@ body{
 .wrapper{
     position: relative;
     width: 100%;
-    min-width: $containWidth + 20px;
+ //   min-width: $containWidth + rem(20px);
     min-height: 100%;
     overflow: hidden;
 }
 .container{
-    width: $containWidth;
+    max-width: $containWidth;
+    width: 95%;
     margin: 0 auto;
     position: relative;
 }

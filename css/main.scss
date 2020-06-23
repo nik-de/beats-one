@@ -3,6 +3,14 @@ $red:#e01f3d;
 $containWidth:945px;
 $fontsize: 18px;
 
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//media
+@import "media";
+
 //normalize
 @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
 
@@ -26,3 +34,5 @@ $fontsize: 18px;
 @import "components/form";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/menu";
+@import "components/hamburger";

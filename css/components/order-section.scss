@@ -4,4 +4,7 @@
 }
 .order-section__title{
     color: #ffffff;
+    @include tablets{
+        margin-bottom: rem(20px);
+    }
 }

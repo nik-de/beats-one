@@ -1,0 +1,21 @@
+.order{
+    background:#161616 url(../img/bg.png) no-repeat bottom;
+    color: #ffffff;
+}
+.order__container-title{
+    color: #ffffff;
+    @include tablets{
+        margin-bottom: rem(20px);
+    }
+}
+.order__container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: rem(24px);
+    @include phones{
+        padding-top: rem(54px);
+        justify-content: flex-start;
+    }
+}

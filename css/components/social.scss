@@ -1,0 +1,44 @@
+.social{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.social__item{
+    display: inline-block;
+    width: rem(36px);
+    height: rem(36px);
+    position: relative;
+    background: #b2b2b2;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: rem(10px);
+    @include phones{
+        margin: rem(5px);
+    }
+    &:hover{
+        background: #000000; ;
+    }
+}
+.social__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    fill: #ffffff;
+}
+.social__icon-telegram{
+    height: rem(20px);
+    width: rem(20px);
+    margin-left: rem(-1px);
+}
+.social__icon-vk{
+    height: rem(22px);
+    width: rem(22px);
+}
+.social__icon-f{
+    height: rem(36px);
+    width: rem(36px);
+}
+.social__icon-in{
+    height: rem(20px);
+    width: rem(20px);
+}

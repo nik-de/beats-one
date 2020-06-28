@@ -1,25 +1,38 @@
+html{
+    font-size: $fontsize;
+
+    @include tablets{
+        font-size: $fontsize - 1px;
+    
+    }
+    @include phones{
+        font-size:4vmin;
+    }
+}
 html,
 body{
     height: 100%;
 }
 body{
-    font-size: $fontsize;
-    font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
-    line-height: 1.42;
+    font-family: "Play", "Alegreya Sans", Arial, Helvetica, sans-serif;
+    line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     color: #666666;
+    @include phones{
+        line-height: 1;
+    }
 }
 .wrapper{
     position: relative;
     width: 100%;
-    min-width: $containWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 .container{
-    width: $containWidth;
+    max-width: $containWidth;
+    width: 95%;
     margin: 0 auto;
     position: relative;
 }
@@ -30,7 +43,7 @@ h4,
 h5,
 h6{
     margin-top: 0;
-    font-weight: normal;
+    font-weight: 300;
 }
 table{
     border-collapse: collapse;
@@ -48,6 +61,7 @@ p{
 }
 footer{
     position: relative;
+    width: 100%;
 }
 *{
     box-sizing: border-box;

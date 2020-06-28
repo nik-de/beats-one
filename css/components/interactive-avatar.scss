@@ -1,11 +1,16 @@
 .interactive-avatar{
-    width: 80px;
-    height: 80px;
-    border: 6px solid transparent;
+    width: rem(80px);
+    height: rem(80px);
+    border: rem(6px) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    margin-right:2px;
+    margin-right:rem(2px);
+    @include tablets{
+        width: rem(74px);
+        height: rem(74px);
+        margin-right:3%;    
+    }
     &:hover{
         border-color: #000000;
     }

@@ -1,12 +1,21 @@
 $gray: #f5f5f5;
 $red:#e01f3d;
-$containWidth:945px;
+$containWidth: 945px;
 $fontsize: 18px;
+
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//media
+@import "media";
 
 //normalize
 @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import "layout";
 
 //components
@@ -16,13 +25,21 @@ $fontsize: 18px;
 @import "components/feature";
 @import "components/btn";
 @import "components/section";
-@import "components/stick";
 @import "components/headline";
+@import "components/why";
 @import "components/benefits";
 @import "components/benefit";
 @import "components/reviews";
 @import "components/interactive-avatar";
-@import "components/order-section";
+@import "components/order";
 @import "components/form";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/menu";
+@import "components/hamburger";
+@import "components/footer";
+@import "components/social";
+@import "components/how";
+@import "components/map";
+@import "components/phone-number";
+@import "components/address";

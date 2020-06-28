@@ -1,0 +1,15 @@
+.address{
+    color: #000000;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(10px);
+    @include phones{
+        align-items: center;
+    }
+}
+.address__text{
+    @include phones{
+        margin-bottom: 5%;
+    }
+}

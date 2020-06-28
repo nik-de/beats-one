@@ -19,7 +19,7 @@
         top: rem(50px);
         right: rem(0px);
         transform: translateX(50%);
-        @include phones{
+        @include tablets{
             display: none;
         }
     }

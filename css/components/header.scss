@@ -3,23 +3,12 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-.header__phone-number{
-    font-size: rem(24px);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+.phone-number.header__phone{
     @include tablets{
         display: none;
     }
 }
-.header__phone-number-icon{
-    width: rem(12px);
-    height: rem(12px);
-    margin-right: rem(6px);
-    flex-shrink: 0;
-}
 .logo{
-    height: rem(42px);
-    width: rem(42px);
+    height: 42px;
+    width: 42px;
 }

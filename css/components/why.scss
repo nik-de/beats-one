@@ -1,0 +1,27 @@
+.why{
+    position: relative;
+    &::after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: rem(30px) solid transparent;
+        border-right: rem(30px) solid transparent;
+        border-bottom: rem(40px) solid $red;
+        position: absolute;
+        display: block;
+        transform: translate(50%, 50%) rotate(-15deg);
+        left: 3%;
+        bottom: rem(10px);
+    }
+}
+.why__container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: rem(24px);
+    @include phones{
+        padding-top: rem(54px);
+        justify-content: flex-start;
+    }
+}

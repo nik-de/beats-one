@@ -7,7 +7,7 @@
 }
 .headline__subtitle{
     padding: 0 26%;
-    @include phones{
+    @include tablets{
         padding: 0 5%;
     }
 }

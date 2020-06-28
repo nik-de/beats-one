@@ -3,13 +3,16 @@
     height: 100vh;
     min-height: rem(650px);
     color: black;
-    font-size: $fontsize;
     position: relative;
     &:after{
+        content: "";
         position: absolute;
-        content: url(../img/scotch.png);
-        bottom: rem(-20px);
-        right: 20%;
+        background: #999999;
+        width: rem(10px);
+        height: rem(40px);
+        bottom: 0;
+        right: 10%;
+        transform: translate(50%, 50%) rotate(45deg);
     }
 }
 .hero__container{
@@ -29,7 +32,9 @@
         padding: 0 10%;
     }
     @include phones{
-        padding: 0 16%;
+        padding: 0;
+        margin-top: 5%;
+        margin-bottom: 30%;
     }
 
 }
@@ -46,9 +51,7 @@
     padding-right: 10%;
     @include tablets{
         padding-left: 10%;
-    }
-    @include phones{
-        padding: 0;
+        margin-bottom: 10%;
     }
 }
 .hero__beats{

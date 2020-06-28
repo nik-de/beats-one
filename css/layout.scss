@@ -6,7 +6,7 @@ html{
     
     }
     @include phones{
-        font-size: $fontsize - 2px;
+        font-size:4vmin;
     }
 }
 html,
@@ -14,17 +14,19 @@ body{
     height: 100%;
 }
 body{
-    font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
-    line-height: 1.42;
+    font-family: "Play", "Alegreya Sans", Arial, Helvetica, sans-serif;
+    line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     color: #666666;
+    @include phones{
+        line-height: 1;
+    }
 }
 .wrapper{
     position: relative;
     width: 100%;
- //   min-width: $containWidth + rem(20px);
     min-height: 100%;
     overflow: hidden;
 }
@@ -41,7 +43,7 @@ h4,
 h5,
 h6{
     margin-top: 0;
-    font-weight: normal;
+    font-weight: 300;
 }
 table{
     border-collapse: collapse;
@@ -59,6 +61,7 @@ p{
 }
 footer{
     position: relative;
+    width: 100%;
 }
 *{
     box-sizing: border-box;

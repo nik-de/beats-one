@@ -3,6 +3,7 @@
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 10px;
     @include tablets{
         display: inline-flex;
     }
@@ -11,6 +12,6 @@
     display: block;
     background:#000;
     height: 4px;
-    border-radius: 30%;
+    border-radius: 10%;
     margin-bottom: 5px;
 }
